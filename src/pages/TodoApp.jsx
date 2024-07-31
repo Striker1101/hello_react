@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import Todos from "./components/Todos";
-import FormTodo from "./components/FormTodo";
+import Todos from "../components/Todos";
+import FormTodo from "../components/FormTodo";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import Nav from "./utility/Nav";
 
 export default function TodoApp() {
   const [toggleForm, setToggleForm] = useState(true);
@@ -30,6 +31,7 @@ export default function TodoApp() {
   }
   return (
     <Container>
+      <Nav />
       <div style={{ display: "flex", gap: "10px" }} className="row ">
         <h1 className="col">Todo List </h1>
         <Button

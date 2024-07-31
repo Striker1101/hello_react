@@ -3,6 +3,7 @@ import "../assets/css/rps.css";
 import rock_image from "../assets/images/rock.jpg";
 import papper_image from "../assets/images/paper.jpg";
 import scissors_image from "../assets/images/scissors.jpg";
+import Nav from "./utility/Nav";
 export default function RPS() {
   //js code
   const [playerChoice, setPlayerChoice] = useState("");
@@ -58,6 +59,7 @@ export default function RPS() {
   }
   return (
     <div className="rps">
+      <Nav />
       <div className="container_images">
         <div>
           <img src={rock_image} alt="" onClick={() => play("rock")} />
