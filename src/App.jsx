@@ -1,7 +1,12 @@
 import "./App.css";
+import RPS from "./pages/RPS";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <RPS />
+    </>
+  );
 }
 
 export default App;
