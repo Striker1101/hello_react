@@ -59,7 +59,6 @@ export default function RPS() {
   }
   return (
     <div className="rps">
-      <Nav />
       <div className="container_images">
         <div>
           <img src={rock_image} alt="" onClick={() => play("rock")} />
